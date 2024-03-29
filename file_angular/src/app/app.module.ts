@@ -4,7 +4,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { AppRoutingModule } from './app.routes'; // Adjust the path as needed
 import { FileListComponent } from './components/file-list/file-list.component'; // Adjust the path as needed
 import { FileUploadService } from './services/file-upload.service'; // Adjust the path as needed
-import { PdfDownloadService } from './services/pdf-download.service'; // Import the service
 import { UploadFilesComponent } from './upload-files/upload-files.component'; // Adjust the path as needed
 
 
@@ -21,7 +20,7 @@ import { UploadFilesComponent } from './upload-files/upload-files.component'; //
   ],
   providers: [
     FileUploadService,
-    PdfDownloadService
+
     // Other services
   ],
   bootstrap: [UploadFilesComponent] // Adjust if needed, consider using AppComponent as the bootstrap component
